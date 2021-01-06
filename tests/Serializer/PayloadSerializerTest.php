@@ -59,7 +59,7 @@ final class PayloadSerializerTest extends TestCase
     {
         ClockMock::withClockMock(1597790835);
 
-        $sdkVersion = PrettyVersions::getVersion('sentry/sentry')->getPrettyVersion();
+        $sdkVersion = PrettyVersions::getVersion('ilyaplot/sentry')->getPrettyVersion();
 
         yield [
             Event::createEvent(new EventId('fc9442f5aef34234bb22b9a615e30ccd')),

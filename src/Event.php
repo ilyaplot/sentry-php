@@ -162,7 +162,7 @@ final class Event
     {
         $this->id = $eventId ?? EventId::generate();
         $this->timestamp = microtime(true);
-        $this->sdkVersion = PrettyVersions::getVersion('sentry/sentry')->getPrettyVersion();
+        $this->sdkVersion = PrettyVersions::getVersion('ilyaplot/sentry')->getPrettyVersion();
         $this->type = $eventType;
     }
 

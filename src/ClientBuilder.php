@@ -76,7 +76,7 @@ final class ClientBuilder implements ClientBuilderInterface
     public function __construct(Options $options = null)
     {
         $this->options = $options ?? new Options();
-        $this->sdkVersion = PrettyVersions::getVersion('sentry/sentry')->getPrettyVersion();
+        $this->sdkVersion = PrettyVersions::getVersion('ilyaplot/sentry')->getPrettyVersion();
     }
 
     /**

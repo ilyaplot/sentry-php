@@ -38,7 +38,7 @@ final class ClientBuilderTest extends TestCase
     public function testClientBuilderFallbacksToDefaultSdkIdentifierAndVersion(): void
     {
         $callbackCalled = false;
-        $expectedVersion = PrettyVersions::getVersion('sentry/sentry')->getPrettyVersion();
+        $expectedVersion = PrettyVersions::getVersion('ilyaplot/sentry')->getPrettyVersion();
 
         $options = new Options();
         $options->setBeforeSendCallback(function (Event $event) use ($expectedVersion, &$callbackCalled) {

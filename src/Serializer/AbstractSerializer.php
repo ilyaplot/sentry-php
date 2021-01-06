@@ -99,7 +99,13 @@ abstract class AbstractSerializer
                 return $this->serializeValue($value);
             }
 
-            if (\is_callable($value)) {
+            if (\is_array($value) && count($value) === 2) {
+                list($class, $method) = $value;
+
+                if (\is_object($class) || (\is_string($class) && \class_exists($class, false) && \is_callable($value))) {
+                    return $this->serializeCallable($value);
+                }
+            } elseif (\is_callable($value)) {
                 return $this->serializeCallable($value);
             }
 
