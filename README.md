@@ -6,10 +6,10 @@
 
 # Sentry SDK for PHP
 
-[![Total Downloads](https://poser.pugx.org/sentry/sentry/downloads)](https://packagist.org/packages/sentry/sentry)
-[![Monthly Downloads](https://poser.pugx.org/sentry/sentry/d/monthly)](https://packagist.org/packages/sentry/sentry)
-[![Latest Stable Version](https://poser.pugx.org/sentry/sentry/v/stable)](https://packagist.org/packages/sentry/sentry)
-[![License](https://poser.pugx.org/sentry/sentry/license)](https://packagist.org/packages/sentry/sentry)
+[![Total Downloads](https://poser.pugx.org/ilyaplot/sentry/downloads)](https://packagist.org/packages/ilyaplot/sentry)
+[![Monthly Downloads](https://poser.pugx.org/ilyaplot/sentry/d/monthly)](https://packagist.org/packages/ilyaplot/sentry)
+[![Latest Stable Version](https://poser.pugx.org/ilyaplot/sentry/v/stable)](https://packagist.org/packages/ilyaplot/sentry)
+[![License](https://poser.pugx.org/ilyaplot/sentry/license)](https://packagist.org/packages/ilyaplot/sentry)
 [![Discord](https://img.shields.io/discord/621778831602221064)](https://discord.gg/cWnMQeA)
 
 | Version | Build Status | Code Coverage |
@@ -33,14 +33,14 @@ If you are happy with using the HTTP client we recommend install the SDK like: [
 composer require sentry/sdk
 ```
 
-This package (`sentry/sentry`) is not tied to any specific library that sends HTTP messages. Instead,
+This package (`ilyaplot/sentry`) is not tied to any specific library that sends HTTP messages. Instead,
 it uses [Httplug](https://github.com/php-http/httplug) to let users choose whichever
 PSR-7 implementation and HTTP client they want to use.
 
 If you just want to get started quickly you should run the following command:
 
 ```bash
-composer require sentry/sentry php-http/curl-client
+composer require ilyaplot/sentry php-http/curl-client
 ```
 
 This is basically what our metapackage (`sentry/sdk`) provides.
